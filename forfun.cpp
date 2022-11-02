@@ -91,6 +91,21 @@ int main()
     v();
 
 
+    
+auto v = vector<int>{1,2,3};
+auto s = string("Emre");
+
+
+for(auto it = s.begin(); it != s.end(); it++){
+ cout<<*it<<endl;
+}
+
+
+for(auto it : s){
+   cout<< it<<endl;
+}
+
+
 
    return 0;
 }
