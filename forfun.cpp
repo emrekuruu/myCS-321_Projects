@@ -80,6 +80,16 @@ int main()
     auto increment2 = DoSomethingByX(5,MultiplyByX);
     transform(v,increment2);
     v();
+    
+    auto increment44 = [amount = 44]<typename T>(T& container){
+        for(int i = 0; i < container.dimension; i++){
+            container.content[i] = IncrementByX(container.content[i],amount);
+        }
+    };
+    
+    transform(v,increment44);
+    v();
+
 
 
    return 0;
